@@ -62,7 +62,7 @@ header > * {
 }
 
 main {
-  background: rgb(15, 41, 49);
+  background: white;
   width: 100%;
   margin-top: 2rem;
   display: flex;
@@ -75,22 +75,36 @@ main {
   min-width: 600px;
   width: 100%;
   padding: 0 1rem;
-  border: 1px solid white;
 }
 
 .post {
+  background: #f4f6f5;
   display: flex;
-  height: 350px;
+  height: 200px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.4);
 }
 
 .post-image {
   flex-basis: 40%;
+  padding-right: 0.75rem;
+  box-sizing: border-box;
 }
 
 .post-image img {
   width: 100%;
   max-height: 100%;
   object-fit: cover;
+}
+
+.post-content {
+  box-sizing: border-box;
+  padding: 0.25rem 0;
+}
+
+.published-on {
+  font-size: 0.65rem;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 footer {
